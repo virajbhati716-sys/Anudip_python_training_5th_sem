@@ -1,27 +1,24 @@
-#program of converting the time in minutes to corresponding time in hour, minute and second 
-print("---------Time Converter-----------")
-#input of time in seconds
-second = int(input("enter time in second: "))
-#check second in negative 
-if(second <0):
-    exit("time cannot be negative.........exited")
-#----------------------------------------------------------------
-print("-------------------------------------------------")
-hours = 0
-minutes = 0
-#converting number of second into hours 
-if(second >= 3600):
-    hours = second // 3600
-    second = second % 3600
-#----------------------------------------------------------------
-#converting into minutes
-if(second >= 60):
-    minutes = second // 60
-    second = second % 60
-#----------------------------------------------------------------
-#converting into seconds
-if(second >= 0):
-    print("Time in hour : ", hours)
-    print("Time in minute : ", minutes)
-    print("Time in second : ", second)
-    print("Time =", hours,":",minutes,":",second)
+#program to check whether three angles form a triangle or not 
+print("--------------------triangle angles---------------------------")
+#input of three angles
+angle1 = int(input("enter first angle (in degree) : "))
+#validation of angle1
+if (angle1 <= 0):
+    exit("angle cannot be zero or negative")
+#----------------------------------------------------------------------------
+angle2 = int(input("enter second angle (in degree) : "))
+#validation of angle2
+if (angle2 <= 0):
+    exit("angle cannot be zero or negative")
+#----------------------------------------------------------------------------
+angle3 = int(input("enter third angle (in degree) : "))
+#validation of angle3
+if (angle3 <= 0):
+    exit("angle cannot be zero or negative")
+#---------------------------------------------------------------------------
+print("---------------------------------------------------")
+if (angle1 + angle2 + angle3 == 180):
+    print("the angles form a triangle")
+else:
+    print("the angles do not form a triangle")   
+    
